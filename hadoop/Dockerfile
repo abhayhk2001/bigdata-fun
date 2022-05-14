@@ -1,6 +1,6 @@
 FROM karlstoney/jvm:latest 
 
-RUN yum -y -q install perl which
+RUN apt -y -q install perl which
 
 ENV HADOOP_HOME /opt/hadoop
 ENV HADOOP_CONF_DIR /etc/hadoop

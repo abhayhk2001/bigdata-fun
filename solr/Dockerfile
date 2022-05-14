@@ -13,7 +13,7 @@ RUN groupadd solr && \
     useradd -r -g solr solr && \
     chown solr:solr -R $SOLR_HOME
 
-RUN yum -y -q install lsof
+RUN apt -y -q install lsof
     
 WORKDIR /opt/solr
 

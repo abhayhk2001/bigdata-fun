@@ -1,5 +1,5 @@
 FROM karlstoney/jvm:latest
-RUN yum install -q -y git-core
+RUN apt install -q -y git-core
 
 ENV LEIN_ROOT true
 ENV ZKWEB_HOME /opt/zk-web

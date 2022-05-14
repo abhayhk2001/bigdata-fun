@@ -4,8 +4,8 @@ FROM karlstoney/jvm:latest
 RUN curl --silent --location https://rpm.nodesource.com/setup_7.x | bash -
 
 # Install nodejs, currently 7.4.0
-RUN yum -y -q install nodejs-7.4.* gcc-c++ make git bzip2 && \
-    yum -y -q clean all
+RUN apt -y -q install nodejs-7.4.* gcc-c++ make git bzip2 && \
+    apt -y -q clean all
 
 # Get Banana
 ENV BANANA_VERSION 1.6.12

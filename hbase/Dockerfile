@@ -1,6 +1,6 @@
 FROM karlstoney/jvm:latest 
 
-RUN yum -y -q install gettext unzip maven
+RUN apt -y -q install gettext unzip maven
 
 # Setup environment
 ENV HBASE_MANAGES_ZK true

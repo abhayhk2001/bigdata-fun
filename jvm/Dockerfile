@@ -1,4 +1,4 @@
-FROM centos:7
+FROM ubuntu:16.04
 MAINTAINER Karl Stoney <me@karlstoney.com> 
 
 VOLUME /data
@@ -8,6 +8,6 @@ ENV JAVA_OPTS "-Xms512m -Xmx2g"
 ENV TERM xterm-256color
 
 # Get dependencies
-RUN yum -y -q install curl wget java-1.8.0-openjdk-headless
+RUN apt -y -q install curl wget java-1.8.0-openjdk-headless
 
 CMD ["/bin/true"]
