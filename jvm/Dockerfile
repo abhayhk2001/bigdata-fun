@@ -3,7 +3,7 @@ MAINTAINER Karl Stoney <me@karlstoney.com>
 
 VOLUME /data
 
-ENV JAVA_HOME /usr/lib/jvm/jre-1.8.0-openjdk
+ENV JAVA_HOME /usr/lib/jvm/openjdk-8-jdk
 ENV JAVA_OPTS "-Xms512m -Xmx2g"
 ENV TERM xterm-256color
 
