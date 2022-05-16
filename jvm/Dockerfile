@@ -8,6 +8,7 @@ ENV JAVA_OPTS "-Xms512m -Xmx2g"
 ENV TERM xterm-256color
 
 # Get dependencies
-RUN apt -y -q install curl wget java-1.8.0-openjdk-headless
+RUN apt update
+RUN apt -y -q install curl wget openjdk-8-jdk openjdk-8-jdk-headless
 
 CMD ["/bin/true"]
