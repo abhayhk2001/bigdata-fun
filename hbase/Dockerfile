@@ -24,7 +24,7 @@ ENV INDEXER_HOME /opt/hbase-indexer
 
 # Install the Lily (HBase Indexer)
 RUN cd /tmp && \
-    wget --quiet https://github.com/NGDATA/hbase-indexer/archive/master.zip && \
+    wget --quiet https://github.com/Shru-04/hbase-indexer/archive/master.zip && \
 	unzip master.zip && \
     rm master.zip && \
     cd hbase-indexer-master && \ 
